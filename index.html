@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site do Agrinho</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .gallery {
+            display: flex;
+            overflow-x: auto;
+            scroll-snap-type: x mandatory;
+            -webkit-overflow-scrolling: touch; /* para suavizar a rolagem no iOS */
+        }
+
+        .gallery img {
+            scroll-snap-align: center;
+            max-width: 100%;
+            height: auto;
+            margin-right: 10px; /* espaço entre as imagens */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Agrinho</h1>
+            <nav>
+                <ul>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#galeria">Galeria</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="sobre">
+            <div class="container">
+                <h2>Sobre Aginho</h2>
+                <p>O Projeto Agrinho é uma iniciativa educacional desenvolvida pelo Serviço Nacional de Aprendizagem Rural (SENAR) e pela Federação da Agricultura e Pecuária do Estado do Paraná (FAEP), com o objetivo de promover a educação no campo e nas cidades, incentivando a cidadania, sustentabilidade e qualidade de vida. Ele engloba temas como meio ambiente, saúde, segurança alimentar, cooperativismo, além de estimular o protagonismo juvenil e o desenvolvimento de valores como responsabilidade e solidariedade. O Agrinho alcança milhares de alunos e professores anualmente, contribuindo para a formação de uma sociedade mais consciente e engajada com questões sociais e ambientais.</p>
+            </div>
+        </section>
+
+        <section id="galeria">
+            <div class="container">
+                <h2>Galeria de Fotos</h2>
+                <div class="gallery">
+                    <img src="https://i.ytimg.com/vi/FUrdCkeL-fY/maxresdefault.jpg" alt="Aginho explorando a floresta">
+                    <img src="https://st4.depositphotos.com/1480128/38052/i/450/depositphotos_380529538-stock-photo-tractor-spraying-pesticides-soy-field.jpg" alt="Placeholder 1">
+                    <img src="https://img.freepik.com/fotos-gratis/trabalhador-agricola-dirigindo-trator-pulverizando-prado-verde-gerado-por-ia_188544-18554.jpg" alt="Placeholder 2">
+                    <img src="https://static.mundoeducacao.uol.com.br/mundoeducacao/2023/07/fazendeiro-verificando-a-qualidade-do-solo-nas-proximidades-de-sua-plantacao-como-representacao-da-ideia-de-agricultura.jpg" alt="Placeholder 3">
+                </div>
+            </div>
+        </section>
+
+        <section id="contato">
+            <div class="container">
+                <h2>Entre em Contato</h2>
+                <form action="#" method="POST">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Site do Agrinho. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
